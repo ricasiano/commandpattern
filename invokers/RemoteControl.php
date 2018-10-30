@@ -1,15 +1,20 @@
 <?php
 namespace Invokers;
 
-use Commands\LightOffCommand;
-use Commands\LightOnCommand;
+use Commands\ICommand;
 
-class LightRemoteControl
+class RemoteControl
 {
     private $on;
     private $off;
 
-    public function __construct(LightOnCommand $on, LightOffCommand $off)
+    /**
+     * RemoteControl constructor.
+     *
+     * @param ICommand $on     turns on the device
+     * @param ICommand $off    turns off the device
+     */
+    public function __construct(ICommand $on, ICommand $off)
     {
         $this->on = $on;
         $this->off = $off;
