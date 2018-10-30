@@ -4,7 +4,6 @@ include "commands/LightOffCommand.php";
 include "commands/LightOnCommand.php";
 include "receivers/ILight.php";
 include "receivers/AkiraLight.php";
-include "receivers/PhilipsLight.php";
 include "invokers/LightRemoteControl.php";
 
 $akira = new \Receivers\AkiraLight();
