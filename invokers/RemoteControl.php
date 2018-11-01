@@ -20,12 +20,12 @@ class RemoteControl
         $this->off = $off;
     }
 
-    public function switchOn()
+    public function on()
     {
         $this->on->execute();
     }
 
-    public function switchOff()
+    public function off()
     {
         $this->off->execute();
     }

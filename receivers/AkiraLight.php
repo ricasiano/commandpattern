@@ -8,12 +8,12 @@ namespace Receivers;
  */
 class AkiraLight implements ILight
 {
-    public function on()
+    public function switchOn()
     {
         echo 'Akira on.</br>';
     }
 
-    public function off()
+    public function switchOff()
     {
         echo 'Akira off.</br>';
     }

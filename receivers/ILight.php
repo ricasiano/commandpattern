@@ -8,6 +8,6 @@ namespace Receivers;
  */
 interface ILight
 {
-    public function on();
-    public function off();
+    public function switchOn();
+    public function switchOff();
 }

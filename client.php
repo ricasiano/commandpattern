@@ -14,5 +14,5 @@ $off = new \Commands\LightOffCommand($akira);
 $akiraLightRemoteControl = new \Invokers\RemoteControl($on, $off);
 
 //turning on and off our lights
-$akiraLightRemoteControl->switchOn();
-$akiraLightRemoteControl->switchOff();
+$akiraLightRemoteControl->on();
+$akiraLightRemoteControl->off();

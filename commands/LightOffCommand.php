@@ -13,11 +13,11 @@ class LightOffCommand implements ICommand
 
     public function execute()
     {
-        $this->light->off();
+        $this->light->switchOff();
     }
 
     public function unexecute()
     {
-        $this->light->on();
+        $this->light->switchOn();
     }
 }
